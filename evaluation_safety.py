@@ -1,3 +1,10 @@
+'''
+    Boeing Proprietary.
+    Developed by Daniel Whyatt, Boeing AI & ML
+    Developed by Noushin Sahin, Boeing AI & ML
+    Developed by Hai Nguyen, Enterprise Safety
+'''
+
 from gliner import GLiNER
 import pandas as pd
 import json

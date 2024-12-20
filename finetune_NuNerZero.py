@@ -1,3 +1,9 @@
+'''
+    Boeing Proprietary.
+    Developed by Daniel Whyatt, Boeing AI & ML
+    Developed by Noushin Sahin, Boeing AI & ML
+'''
+
 import json
 from gliner import GLiNER
 import torch
@@ -54,8 +60,8 @@ def load_model(path, model_name=None):
 
     return loaded_model
 
-# model = GLiNER.from_pretrained("nuZeroModel", local_files_only=True)
-model = load_model("./nuZeroModel/pytorch_model.bin", model_name='nuZeroNER')
+model = GLiNER.from_pretrained("nuZeroModel", local_files_only=True)
+# model = load_model("./nuZeroModel/pytorch_model.bin", model_name='nuZeroNER')
 
 # Define the hyperparameters in a config variable
 config = SimpleNamespace(
