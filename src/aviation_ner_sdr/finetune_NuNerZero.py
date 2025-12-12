@@ -20,7 +20,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print(f"Current GPU device name: {torch.cuda.get_device_name(0)}")
 print(f"Using device: {device}")
-train_path = "./Dataset/BIO/train.10.23.bio.json" # your data or dataset from https://github.com/urchade/GLiNER/blob/main/examples/sample_data.json
+train_path = "../../Dataset/BIO/train.10.23.bio.json"  # your data or dataset from https://github.com/urchade/GLiNER/blob/main/examples/sample_data.json
 
 with open(train_path, "r") as f:
     data = json.load(f)

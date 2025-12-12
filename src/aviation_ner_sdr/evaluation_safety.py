@@ -13,7 +13,7 @@ from nervaluate import Evaluator
 
 model = GLiNER.from_pretrained("safety_NER_BIO", local_files_only=True)
 
-test_json_path = "./Dataset/BIO/test.10.23.bio.json"
+test_json_path = "../../Dataset/BIO/test.10.23.bio.json"
 
 entity_types = ["B-prod", "I-prod", "B-loc", "I-loc", "B-pcon", "I-pcon", "B-sit", "I-sit", "B-act", "I-act", "B-bird", "I-bird", "B-flt", "I-flt"]
 entity_types = [etype.lower() for etype in entity_types]
