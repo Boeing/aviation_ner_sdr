@@ -1,0 +1,14 @@
+[project]
+name = "aviation_ner_sdr"
+version = "0.1.0"
+description = "package to train a Named Entity Recognition model with FAA SDR data"
+dependencies = [
+    # List your dependencies here
+    "requests",
+    "numpy>=1.20.0"
+]
+requires-python = ">=3.6"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
