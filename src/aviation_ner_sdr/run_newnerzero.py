@@ -74,7 +74,7 @@ class NERTagging:
                 if tag.startswith("i"):  # if not new entity, keep appending to current
 
                     if temp_tag is None: # handle mislabels where parts start with I
-                        temp_tag, temp_entity = labeler.strip_bi(tag), [token]  # reset
+                        temp_tag, temp_entity = self.strip_bi(tag), [token]  # reset
                     else:
                         temp_entity.append(token)
 
@@ -85,7 +85,7 @@ class NERTagging:
                             d[temp_tag] = []
                         d[temp_tag].append(" ".join(temp_entity))
 
-                    temp_tag, temp_entity = labeler.strip_bi(tag), [token]  # reset
+                    temp_tag, temp_entity = self.strip_bi(tag), [token]  # reset
 
             else:  # tag is "o"
 
